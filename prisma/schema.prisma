@@ -5,19 +5,24 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// datasource db {
+//   provider = "sqlite"
+//   url      = env("DATABASE_URL")
+// }
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
 model reviews {
-  id String @id
-  title String
-  author String
-  price Int
+  id        String   @id
+  title     String
+  author    String
+  price     Int
   publisher String
   published String
-  image String
-  read DateTime @default(now())
-  memo String
+  image     String
+  read      DateTime @default(now())
+  memo      String
 }
