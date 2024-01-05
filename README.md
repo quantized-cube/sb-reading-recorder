@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## 元にした本
+
+山田 祥寛、[『これからはじめるReact実践入門 コンポーネントの基本からNext.jsによるアプリ開発まで』](https://amzn.to/3U6B391)、SBクリエイティブ、978-4815619480
+
+Vercel でのデプロイ先：https://sb-reading-recorder.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
